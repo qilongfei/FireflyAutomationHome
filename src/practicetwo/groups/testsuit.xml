@@ -1,0 +1,28 @@
+<suite name="FireflyAutomation">
+	<test name="Practice1" preserve-order="true">
+		<groups>
+			<define name="submodule1"></define>
+			<define name="submodule2"></define>
+			<define name="submodule3"></define>
+			
+			<define name="module1">
+				<include name="submodule1"></include>
+				<include name="submodule2"></include>
+			</define>
+			
+			<define name="module2">
+				<include name="submodule2"></include>
+				<include name="submodule3"></include>
+			</define>
+			
+			<run>
+				<include name="module2"></include>
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="practicetwo.groups.Practice3OnTestng" />
+		</classes>
+	</test>
+
+</suite>
