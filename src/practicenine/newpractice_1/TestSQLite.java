@@ -17,7 +17,7 @@ public class TestSQLite {
 	private static Wait wa;
 	
 	static{
-		Browsers browser = new Browsers(BrowsersType.firefox);
+		Browsers browser = new Browsers(BrowsersType.ie);
 		driver = browser.driver;
 		wa = new Wait(driver);
 	}

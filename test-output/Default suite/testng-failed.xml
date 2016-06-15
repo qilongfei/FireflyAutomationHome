@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practicetwo.launch.TestBrowsers">
+      <class name="practicenine.newpractice_1.TestSQLite">
         <methods>
           <include name="start"/>
-          <include name="beforeClass"/>
+          <include name="login126DotCom"/>
         </methods>
-      </class> <!-- practicetwo.launch.TestBrowsers -->
+      </class> <!-- practicenine.newpractice_1.TestSQLite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

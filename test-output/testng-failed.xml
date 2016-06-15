@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FireflyAutomation]">
-  <parameter name="platform" value="IE"/>
-  <test name="Practice1(failed)">
-    <groups>
-      <run>
-        <include name="browsers"/>
-        <include name="FF"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="practicetwo.homework.MutipleBrowsers">
+      <class name="practicenine.newpractice_1.TestSQLite">
         <methods>
-          <include name="submodule2"/>
-          <include name="submodule3"/>
-          <include name="inital"/>
+          <include name="start"/>
+          <include name="login126DotCom"/>
         </methods>
-      </class> <!-- practicetwo.homework.MutipleBrowsers -->
+      </class> <!-- practicenine.newpractice_1.TestSQLite -->
     </classes>
-  </test> <!-- Practice1(failed) -->
-</suite> <!-- Failed suite [FireflyAutomation] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

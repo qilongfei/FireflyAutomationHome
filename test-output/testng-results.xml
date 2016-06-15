@@ -1,24 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="FireflyAutomation" duration-ms="20" started-at="2016-06-06T14:26:32Z" finished-at="2016-06-06T14:26:32Z">
+  <suite name="Default suite" duration-ms="31590" started-at="2016-06-14T09:31:09Z" finished-at="2016-06-14T09:31:41Z">
     <groups>
     </groups>
-    <test name="Practice1" duration-ms="20" started-at="2016-06-06T14:26:32Z" finished-at="2016-06-06T14:26:32Z">
-      <class name="practicefour.Practice1OnTestNG">
-        <test-method status="PASS" signature="test(java.lang.String)[pri:0, instance:practicefour.Practice1OnTestNG@5a39699c]" name="test" duration-ms="0" started-at="2016-06-06T22:26:32Z" finished-at="2016-06-06T22:26:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[\tool\test.properties]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="31590" started-at="2016-06-14T09:31:09Z" finished-at="2016-06-14T09:31:41Z">
+      <class name="practicenine.newpractice_1.TestSQLite">
+        <test-method status="PASS" signature="start()[pri:0, instance:practicenine.newpractice_1.TestSQLite@5e316c74]" name="start" is-config="true" duration-ms="62" started-at="2016-06-14T17:31:09Z" finished-at="2016-06-14T17:31:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- practicefour.Practice1OnTestNG -->
-    </test> <!-- Practice1 -->
-  </suite> <!-- FireflyAutomation -->
+        </test-method> <!-- start -->
+        <test-method status="FAIL" signature="login126DotCom()[pri:0, instance:practicenine.newpractice_1.TestSQLite@5e316c74]" name="login126DotCom" duration-ms="31507" started-at="2016-06-14T17:31:09Z" finished-at="2016-06-14T17:31:41Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == #idInput (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 303 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
+System info: host: 'User-PC', ip: '192.168.0.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ignoreZoomSetting=true, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, elementScrollBehavior=0, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 727e980b-4c52-421c-a569-798a1554c7c6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #idInput (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 303 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.40.0', revision: '4c5c0568b004f67810ee41c459549aa4b09c651e', time: '2014-02-19 11:13:01'
+System info: host: 'User-PC', ip: '192.168.0.108', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ignoreZoomSetting=true, handlesAlerts=true, version=9, platform=WINDOWS, nativeEvents=true, elementScrollBehavior=0, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 727e980b-4c52-421c-a569-798a1554c7c6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:326)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:318)
+	at practicenine.newpractice_1.Mail126Page.setUserName(Mail126Page.java:18)
+	at practicenine.newpractice_1.TestSQLite.login126DotCom(TestSQLite.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login126DotCom -->
+      </class> <!-- practicenine.newpractice_1.TestSQLite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
