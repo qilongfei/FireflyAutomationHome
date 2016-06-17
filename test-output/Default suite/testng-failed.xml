@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practicenine.newpractice_1.TestSQLite">
+      <class name="practiceten.testcases.LoginJD">
         <methods>
-          <include name="start"/>
-          <include name="login126DotCom"/>
+          <include name="beforesuite"/>
+          <include name="accessJD"/>
         </methods>
-      </class> <!-- practicenine.newpractice_1.TestSQLite -->
+      </class> <!-- practiceten.testcases.LoginJD -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
